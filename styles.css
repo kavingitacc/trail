@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+.logo{
+    max-width: 100%;
+    max-height: 100%;
+}
+.header1{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    }
+    
+    /* Media queries for different screen sizes */
+@media (min-width: 768px) {
+        .header1 {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+    }
+    
+@media (min-width: 1024px) {
+        .header1 {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    }
+.toggle-button{
+    color: rgb(0, 102, 0);
+    position: relative;
+    margin: auto;
+    border-radius: 0.1px;
+    background:rgb(230, 255, 230);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+main.home {
+    background-image: url('img/back.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 51, 0);
+}
+
+main.home .home-content {
+    background:rgb(230, 255, 230,0.5);
+    padding: 60px;
+    border-radius: 10px;
+}
+@media (min-width: 768px) {
+    main.home .home-content {
+        padding: 5em 5em;
+        background:rgb(230, 255, 230,0.1);
+    }
+}
+
+@media (min-width: 1024px) {
+    main.home .home-content {
+        padding: 60px;
+        background:rgb(230, 255, 230,0.5);
+}
+}
+.intro {
+    font-size: 15px;
+    animation: intro_text 1s;
+    font-weight: bolder;
+
+
+}
+@media (min-width: 768px) {
+    .intro {
+        font-size: 50px;
+        
+    }
+}
+
+@media (min-width: 1024px) {
+    .intro {
+        font-size: 50px;
+
+    }
+}
+@keyframes intro_text{
+    0%{
+        color: black;
+        margin-bottom: -5px;
+    }
+    30%{
+        border-left: 2px solid ;
+        margin-bottom: -5px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -5px;
+    }
+}
+.intro1{
+    font-size: 10px;
+}
+@media (min-width: 768px) {
+    .intro1 {
+        font-size: 20px;
+        
+    }
+}
+
+@media (min-width: 1024px) {
+    .intro1 {
+        font-size: 20px;
+
+    }
+}
+section {
+    padding: 20px;
+}
+
+.subpage {
+    background-color: white;
+}
+
+.subpage nav ul li a {
+    background-color: #004080;
+    color: white;
+}
+
+#faculty .faculty-member,
+#academics .toppers img,
+#activities img {
+    width: 100px;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main.home {
+        height: auto;
+        padding: 20px;
+    }
+
+    #faculty .faculty-member,
+    #academics .toppers img,
+    #activities img {
+        width: 80px;
+    }
+
+    th, td {
+        font-size: 14px;
+    }
+}
